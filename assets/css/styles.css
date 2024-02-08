@@ -1,0 +1,979 @@
+main {
+  width: 100%;
+}
+main > header {
+  width: 100%;
+  height: 180vh;
+}
+main > header > .banner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+main > header > .banner > .banner-dark {
+  width: 50%;
+  height: 180vh;
+  background-color: #000000;
+}
+main > header > .banner > figure {
+  width: 50%;
+  height: 180vh;
+  position: relative;
+}
+main > header > .banner > figure::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+main > header > .banner > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main > header > .banner > nav {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main > header > .banner > nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main > header > .banner > nav > ul > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main > header > .banner > nav > ul > li:first-of-type {
+  margin-left: 50px;
+}
+main > header > .banner > nav > ul > li:last-of-type {
+  margin-right: 50px;
+}
+main > header > .banner > nav > ul > li:last-of-type > a {
+  color: #ffffff;
+  font-size: 40px;
+}
+main > header > .banner > .header-info {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+}
+main > header > .banner > .header-info > * {
+  color: #ffffff;
+}
+main > header > .banner > .header-info > p:first-of-type {
+  margin-bottom: 50px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  position: relative;
+}
+main > header > .banner > .header-info > p:first-of-type::before {
+  content: "";
+  width: 50px;
+  height: 0.5px;
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  background-color: #ffffff;
+}
+main > header > .banner > .header-info > h1 {
+  width: 100px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 90px;
+}
+main > header > .banner > .header-info > p:last-of-type {
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Lora", serif;
+  font-weight: lighter;
+  font-size: 18px;
+  word-spacing: 1px;
+  line-height: 40px;
+}
+main > header > .banner > .header-info > a {
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  border: 1px solid #ffffff;
+  transition: 0.2s;
+}
+main > header > .banner > .header-info > a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+main > .first-section {
+  width: 100%;
+  min-height: 186vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+main > .first-section > article:first-of-type {
+  width: 50%;
+  height: 186vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > .first-section > article:first-of-type > * {
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+main > .first-section > article:first-of-type > p:first-of-type,
+main > .first-section > article:first-of-type p:last-of-type,
+main > .first-section > article:first-of-type p:first-of-type > span {
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 25px;
+}
+main > .first-section > article:first-of-type > p:first-of-type > span,
+main > .first-section > article:first-of-type p:last-of-type > span,
+main > .first-section > article:first-of-type p:first-of-type > span > span {
+  font-weight: bold;
+}
+main > .first-section > article:first-of-type > h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 80px;
+}
+main > .first-section > article:first-of-type > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  align-self: flex-start;
+}
+main > .first-section > article:last-of-type {
+  width: 50%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .first-section > article:last-of-type > figure {
+  width: 500px;
+  height: 550px;
+  cursor: pointer;
+  position: relative;
+}
+main > .first-section > article:last-of-type > figure:hover > img {
+  transform: scale(1.03);
+}
+main > .first-section > article:last-of-type > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+main > .first-section > article:last-of-type > figure > figcaption {
+  position: absolute;
+  z-index: 3;
+  bottom: 20px;
+  left: 30%;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 17px;
+}
+main > .second-section {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: -80px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main > .second-section > article {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main > .second-section > article > img {
+  width: 137px;
+  height: 120px;
+  object-fit: cover;
+  margin: 20px 0;
+}
+main > .second-section > article > h3 {
+  width: 250px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+main > .second-section > article > h3::before {
+  content: "";
+  width: 70px;
+  height: 0.5px;
+  position: absolute;
+  left: 37%;
+  top: 50px;
+  background-color: #545454;
+}
+main > .second-section > article > p {
+  width: 275px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 23px;
+}
+main > .second-section > article > a {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  border: 1.3px solid #828282;
+  color: #000000;
+}
+main > .second-section > article > a:hover {
+  border: 1.3px solid #000000;
+}
+main > .third-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+}
+main > .third-section > img {
+  width: 60%;
+  object-fit: cover;
+}
+main > .third-section > article {
+  width: 40%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > .third-section > article > * {
+  width: 55%;
+  color: #ffffff;
+}
+main > .third-section > article > p:first-of-type {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  position: relative;
+}
+main > .third-section > article > p:first-of-type::before {
+  content: "";
+  width: 50px;
+  height: 0.5px;
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  background-color: #ffffff;
+}
+main > .third-section > article > h2 {
+  margin-bottom: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 70px;
+}
+main > .third-section > article > p:last-of-type {
+  font-family: "Lora", serif;
+  font-size: 17px;
+  line-height: 28px;
+}
+main > .third-section > article > div > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  color: #ffffff;
+  transition: 0.3s;
+}
+main > .third-section > article > div > a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+main > .fourth-section {
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 60px;
+}
+main > .fourth-section > h2 {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Lora", serif;
+  font-weight: lighter;
+  position: relative;
+}
+main > .fourth-section > h2::before {
+  content: "";
+  width: 70px;
+  height: 0.5px;
+  position: absolute;
+  top: 170px;
+  background-color: #000000;
+}
+main > .fourth-section > article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .fourth-section > article > a {
+  display: flex;
+  width: 80%;
+  text-decoration: none;
+}
+main > .fourth-section > article > a > img {
+  width: 50%;
+  height: 140vh;
+  object-fit: cover;
+}
+main > .fourth-section > article > a > .person-info {
+  width: 50%;
+  height: 140vh;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s;
+}
+main > .fourth-section > article > a > .person-info:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 3px rgb(39, 39, 39);
+}
+main > .fourth-section > article > a > .person-info > * {
+  width: 50%;
+  margin-left: 130px;
+  color: #ffffff;
+}
+main > .fourth-section > article > a > .person-info > p:nth-of-type(1) {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  position: relative;
+}
+main > .fourth-section > article > a > .person-info > p:nth-of-type(1)::before {
+  content: "";
+  width: 50px;
+  height: 0.5px;
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  background-color: #ffffff;
+}
+main > .fourth-section > article > a > .person-info > h2 {
+  margin-bottom: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 49px;
+  font-weight: lighter;
+}
+main > .fourth-section > article > a > .person-info > div:first-of-type {
+  margin-bottom: 70px;
+  position: relative;
+}
+main > .fourth-section > article > a > .person-info > div:first-of-type > * {
+  margin-right: 10px;
+}
+main > .fourth-section > article > a > .person-info > div:first-of-type::before {
+  content: "";
+  width: 80px;
+  height: 0.5px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background-color: #ffffff;
+}
+main > .fourth-section > article > a > .person-info > p:nth-of-type(2) {
+  margin-bottom: 50px;
+}
+main > .fourth-section > article > a > .person-info > p:nth-of-type(2),
+main > .fourth-section > article > a > .person-info > p:nth-of-type(3) {
+  font-family: "Lora", serif;
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 25px;
+}
+main > .fourth-section > article > a > .person-info > div:nth-of-type(2) {
+  margin-top: 50px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .fifth-section {
+  width: 100%;
+  min-height: 120vh;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main > .fifth-section > article {
+  width: 35%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main > .fifth-section > article:first-of-type, main > .fifth-section > article:last-of-type {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main > .fifth-section > article:first-of-type {
+  background-image: url(../images/info52x.webp);
+}
+main > .fifth-section > article:last-of-type {
+  background-image: url(../images/info12x.webp);
+}
+main > .fifth-section > article > .dark-2nd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0));
+}
+main > .fifth-section > article > * {
+  width: 300px;
+  z-index: 1;
+  color: #ffffff;
+}
+main > .fifth-section > article > p:first-of-type {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+}
+main > .fifth-section > article > h2 {
+  margin-left: 70px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 60px;
+}
+main > .fifth-section > article > div:last-of-type {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  margin-left: 70px;
+  position: relative;
+}
+main > .fifth-section > article > div:last-of-type::before {
+  content: "";
+  width: 70px;
+  height: 0.5px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background-color: #ffffff;
+}
+main > .fifth-section > article > div:last-of-type > * {
+  margin-right: 10px;
+}
+main > .fifth-section > article > p:last-of-type {
+  margin-left: 70px;
+  font-family: "Work Sans", sans-serif;
+  line-height: 22px;
+}
+main > .fifth-section > article > a {
+  width: 200px;
+  height: 50px;
+  margin-left: 70px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.4s;
+}
+main > .fifth-section > article > a:hover {
+  background-color: black;
+}
+main > .sixth-section {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background-image: url(../images/page52x.webp);
+  background-size: 155%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main > .sixth-section > a {
+  width: 250px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 19px;
+  display: flex;
+  position: absolute;
+  top: 74vh;
+  left: calc(50% - 125px);
+}
+main > .seventh-section {
+  width: 100%;
+}
+main > .seventh-section > h2 {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Lora", serif;
+  font-weight: lighter;
+  position: relative;
+}
+main > .seventh-section > h2::before {
+  content: "";
+  width: 70px;
+  height: 0.5px;
+  position: absolute;
+  top: 170px;
+  background-color: #000000;
+}
+main > .seventh-section > article {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main > .seventh-section > article > a {
+  display: flex;
+  width: 300px;
+  height: 560px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000000;
+}
+main > .seventh-section > article > a:hover > figure > .img-tr {
+  height: 560px;
+}
+main > .seventh-section > article > a:hover > figure > figcaption {
+  transform: translateY(100px);
+}
+main > .seventh-section > article > a:first-of-type {
+  margin-left: 50px;
+}
+main > .seventh-section > article > a:last-of-type {
+  margin-right: 50px;
+}
+main > .seventh-section > article > a:hover > figure > .hover-info {
+  opacity: 1;
+}
+main > .seventh-section > article > a:hover > figure > .img-tr > .dark {
+  opacity: 1;
+}
+main > .seventh-section > article > a > figure {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: -1;
+}
+main > .seventh-section > article > a > figure > .hover-info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 40%;
+  color: #ffffff;
+  opacity: 0;
+  transition: 0.4s;
+}
+main > .seventh-section > article > a > figure > .hover-info > i,
+main > .seventh-section > article > a > figure > .hover-info > h2,
+main > .seventh-section > article > a > figure > .hover-info > span {
+  position: relative;
+  z-index: 5;
+}
+main > .seventh-section > article > a > figure > .hover-info > i {
+  width: 100%;
+  font-size: 20px;
+}
+main > .seventh-section > article > a > figure > .hover-info > h2 {
+  width: 100%;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  padding: 10px 0;
+}
+main > .seventh-section > article > a > figure > .hover-info > span {
+  width: 100%;
+  font-family: "Lora", serif;
+  font-size: 15px;
+}
+main > .seventh-section > article > a > figure > .img-tr {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  transition: 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main > .seventh-section > article > a > figure > .img-tr > .dark {
+  position: absolute;
+  width: 100%;
+  height: 140%;
+  top: -40%;
+  left: 0;
+  background-image: linear-gradient(to bottom, black 30%, rgba(0, 0, 0, 0));
+  opacity: 0;
+  transition: 0.4s;
+}
+main > .seventh-section > article > a > figure > .img-tr > img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  transition: 0.4s;
+  position: relative;
+  z-index: -3;
+}
+main > .seventh-section > article > a > figure > figcaption {
+  width: 100%;
+  margin: 20px 0;
+  transition: 0.4s;
+  position: absolute;
+  bottom: -20px;
+  z-index: -50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main > .seventh-section > article > a > figure > figcaption > h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  color: #000000;
+}
+main > .seventh-section > article > a > figure > figcaption > p,
+main > .seventh-section > article > a > figure > figcaption > span {
+  font-family: "Lora", serif;
+  font-size: 12px;
+  color: #000000;
+}
+main > .seventh-section > article > a > figure > figcaption > p {
+  margin: 10px 0;
+}
+main > .eighth-section {
+  width: 100%;
+  margin-top: -100px;
+  min-height: 160vh;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  background-color: #000000;
+}
+main > .eighth-section > img {
+  width: 60%;
+  min-height: 160vh;
+  object-fit: cover;
+}
+main > .eighth-section > article {
+  width: 40%;
+  min-height: 160vh;
+}
+main > .eighth-section > article > * {
+  width: 60%;
+  color: #ffffff;
+  margin-left: 100px;
+}
+main > .eighth-section > article > p:first-of-type {
+  margin-top: 150px;
+  margin-bottom: 40px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  position: relative;
+}
+main > .eighth-section > article > p:first-of-type::before {
+  content: "";
+  width: 50px;
+  height: 0.5px;
+  position: absolute;
+  top: 50%;
+  left: -80px;
+  background-color: #ffffff;
+}
+main > .eighth-section > article > h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 80px;
+}
+main > .eighth-section > article > p:last-of-type {
+  margin-top: 60px;
+  font-family: "Lora", serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+main > .eighth-section > article > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #ffffff;
+  width: 50%;
+  height: 50px;
+  margin-top: 50px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  text-decoration: none;
+  transition: 0.4s;
+}
+main > .eighth-section > article > a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+main > .ninth-section {
+  width: 100%;
+  min-height: 150vh;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > .ninth-section > article:nth-of-type(2) {
+  margin-top: -100px;
+  background-image: url(../images/misc22x.webp);
+  background-size: cover;
+  position: relative;
+}
+main > .ninth-section > article:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, black 30%, rgba(0, 0, 0, 0.2));
+}
+main > .ninth-section > article:nth-of-type(1),
+main > .ninth-section > article:nth-of-type(3) {
+  background-color: #e8e8e8;
+}
+main > .ninth-section > article:nth-of-type(1) > *,
+main > .ninth-section > article:nth-of-type(3) > * {
+  color: #000000;
+}
+main > .ninth-section > article:nth-of-type(1) > * > a,
+main > .ninth-section > article:nth-of-type(3) > * > a {
+  color: #000000;
+}
+main > .ninth-section > article {
+  width: 400px;
+  min-height: 150vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main > .ninth-section > article > * {
+  width: 300px;
+  z-index: 3;
+  color: #ffffff;
+}
+main > .ninth-section > article > h2 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 55px;
+}
+main > .ninth-section > article > div:not(:nth-of-type(1)) {
+  margin-top: 50px;
+}
+main > .ninth-section > article > div:last-of-type {
+  margin-bottom: 70px;
+}
+main > .ninth-section > article > div > a {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 35px;
+}
+main > .ninth-section > article > div > span {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+}
+main > .ninth-section > article > div > p {
+  margin-top: 20px;
+  font-family: "Lora", serif;
+  font-weight: lighter;
+  font-size: 21px;
+}
+main > .tenth-section {
+  width: 100%;
+  height: 130vh;
+  position: relative;
+}
+main > .tenth-section > img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main > .tenth-section > .end-box {
+  position: absolute;
+  left: 10%;
+  top: 12%;
+  background-color: #000000;
+  width: 400px;
+  height: 570px;
+}
+main > .tenth-section > .end-box > * {
+  width: 300px;
+  margin-left: 50px;
+  color: #ffffff;
+}
+main > .tenth-section > .end-box > h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 60px;
+  position: relative;
+}
+main > .tenth-section > .end-box > h2::before {
+  content: "";
+  width: 70px;
+  height: 0.5px;
+  position: absolute;
+  left: 0;
+  top: 200px;
+  background-color: #ffffff;
+}
+main > .tenth-section > .end-box > span {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
+  margin-top: -170px;
+  margin-bottom: 200px;
+}
+main > .tenth-section > .end-box > p {
+  font-family: "Lora", serif;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 30px;
+}
+main > .tenth-section > .end-box > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  transition: 0.4s;
+}
+main > .tenth-section > .end-box > a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+main > .first-footer {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../images/bbbbbb.webp);
+  background-size: cover;
+  background-position: center;
+}
+main > .first-footer > .footer-dark {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, black 40%, rgba(0, 0, 0, 0.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .first-footer > .footer-dark > .footer-box {
+  width: 600px;
+  text-align: center;
+}
+main > .first-footer > .footer-dark > .footer-box > * {
+  color: #ffffff;
+}
+main > .first-footer > .footer-dark > .footer-box > img {
+  margin-bottom: 25px;
+}
+main > .first-footer > .footer-dark > .footer-box > p {
+  font-family: "Lora", serif;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+main > .first-footer > .footer-dark > .footer-box > .footer-icon > * {
+  color: #000000;
+  background-color: #ffffff;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 10px;
+}
+main > .second-footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .second-footer > * {
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+}
+
+/*# sourceMappingURL=styles.css.map */
